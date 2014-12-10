@@ -11,14 +11,15 @@
 */
 
 Ext.application({
-    name: 'MyApp',
+    name: "NotesApp",
+
+    models: ["Note"],
+    stores: ["Notes"],
+    controllers: ["Notes"],
+    views: ["NotesList", "NoteEditor"],
 
     requires: [
         'Ext.MessageBox'
-    ],
-
-    views: [
-        'Main'
     ],
 
     icon: {
@@ -41,10 +42,22 @@ Ext.application({
 
     launch: function() {
         // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
+        //Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('MyApp.view.Main'));
+        //Ext.Viewport.add(Ext.create('MyApp.view.Main'));
+        //var notesListContainer = Ext.create("NotesApp.view.NotesListContainer");
+        //Ext.Viewport.add(notesListContainer);
+
+        var notesListView = {
+            xtype: "noteslistview"
+        };
+        var noteEditorView = {
+            xtype: "noteeditorview"
+        };
+
+        Ext.Viewport.add([notesListView, noteEditorView]);
+
     },
 
     onUpdated: function() {

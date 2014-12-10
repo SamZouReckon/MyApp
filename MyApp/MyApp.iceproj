@@ -122,24 +122,29 @@
     <Content Include="app.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="app\controller\Notes.js" />
     <Content Include="app\controller\Readme.md">
       <SubType>Content</SubType>
     </Content>
     <Content Include="app\form\Readme.md">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="app\model\Note.js" />
     <Content Include="app\model\Readme.md">
       <SubType>Content</SubType>
     </Content>
     <Content Include="app\Readme.md">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="app\store\Notes.js" />
     <Content Include="app\store\Readme.md">
       <SubType>Content</SubType>
     </Content>
     <Content Include="app\view\Main.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="app\view\NoteEditor.js" />
+    <Content Include="app\view\NotesList.js" />
     <Content Include="app\view\Readme.md">
       <SubType>Content</SubType>
     </Content>
