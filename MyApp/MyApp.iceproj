@@ -148,6 +148,8 @@
     <Content Include="app\view\Readme.md">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="App_Resources\iOS\config.xml" />
+    <Content Include="App_Resources\iOS\Info.plist" />
     <Content Include="bootstrap.js">
       <SubType>Content</SubType>
     </Content>
